@@ -20,7 +20,10 @@ function QuestionForm(props) {
   function handleSubmit(event) {
     event.preventDefault();
     console.log(formData);
+    props.onNewQuestion(formData)
   }
+
+  console.log(props)
 
   return (
     <section>
